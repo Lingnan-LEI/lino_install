@@ -154,7 +154,9 @@ else
 
     elif [[ "$SENSOR" == "rplidar" ]]
         then
-            sudo apt-get install -y ros-$ROSDISTRO-rplidar-ros
+            #sudo apt-get install -y ros-$ROSDISTRO-rplidar-ros
+            cd $HOME/linorobot_ws/src
+            git clone https://github.com/Slamtec/rplidar_ros
 
     elif [[ "$SENSOR" == "xv11" ]]
         then
